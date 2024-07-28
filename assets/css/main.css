@@ -1,11 +1,5 @@
 @import url(fontawesome-all.min.css);
 
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -27,6 +21,27 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+.typewriter h1 {
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	border-right: .15em solid black; /* Simulate the typewriter cursor */
+	width: fit-content; /* Make sure the container fits the content size */
+}
+
+/* Cursor animation */
+@keyframes blink-caret {
+	0%, 100% { border-color: transparent }
+	50% { border-color: black }
+}
+
+.typewriter h1 {
+	animation: blink-caret .75s step-end infinite; /* Cursor blink effect */
+}
+
+
 
 body {
 	line-height: 1;
@@ -98,8 +113,20 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: url("background.svg") no-repeat center center fixed;
+		background-size: cover;
+		position: relative;
 	}
+body::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Adjust the rgba values to change the color and transparency */
+	z-index: -1;
+}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -3241,6 +3268,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-color: #5e42a6;
+
 		}
 
 		.wrapper.style1-alt {

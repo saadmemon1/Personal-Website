@@ -112,6 +112,43 @@
 				});
 
 		}
+	const phrases = [
+		"Welcome to my website!",
+		"Welcome to my portfolio!",
+		"Welcome to my workstation!",
+		"Explore my projects!"
+	];
+
+	let currentPhrase = 0;
+	let currentCharacter = 0;
+	let htmlElement = document.getElementById('typewriter-text');
+	let forward = true;
+
+	function type() {
+		if (forward) {
+			if (currentCharacter < phrases[currentPhrase].length) {
+				htmlElement.textContent += phrases[currentPhrase][currentCharacter++];
+				setTimeout(type, 120);
+			} else {
+				setTimeout(type, 2000);
+				forward = false;
+			}
+		} else {
+			if (currentCharacter > 0) {
+				htmlElement.textContent = phrases[currentPhrase].substring(0, --currentCharacter);
+				setTimeout(type, 60);
+			} else {
+				forward = true;
+				currentPhrase = (currentPhrase + 1) % phrases.length;
+				setTimeout(type, 500);
+			}
+		}
+	}
+
+	type();
+
+
+
 
 	// Scrolly.
 		$('.scrolly').scrolly({
