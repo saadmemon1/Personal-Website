@@ -546,7 +546,8 @@ html {
 .track-toggle-container {
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     background: var(--bg-card);
     padding: 10px 20px;
     border-radius: 30px;
@@ -606,7 +607,7 @@ body.prod-track .tech-label { opacity: 0.5; }
 }
 
 input:checked + .slider {
-  background-color: #f59e0b; /* A different color for Product mode */
+  background-color: var(--primary-color); /* Inherits from the prod-track override */
 }
 
 input:checked + .slider:before {
@@ -629,4 +630,10 @@ body.tech-track .prod-only {
 
 body.prod-track .tech-only {
     display: none !important;
+}
+
+/* Product / GTM Theme Override */
+body.prod-track {
+    --primary-color: #f59e0b;
+    --primary-hover: #d97706;
 }
