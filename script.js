@@ -178,3 +178,33 @@ document.querySelectorAll('.social-link, .footer-social a').forEach(link => {
 });
 
 
+
+// Track Toggling System
+document.addEventListener('DOMContentLoaded', () => {
+    const trackToggle = document.getElementById('track-toggle');
+    const savedTrack = localStorage.getItem('saad-portfolio-track');
+    
+    if (trackToggle) {
+        if (savedTrack === 'product') {
+            trackToggle.checked = true;
+            document.body.classList.remove('tech-track');
+            document.body.classList.add('prod-track');
+        } else {
+            trackToggle.checked = false;
+            document.body.classList.add('tech-track');
+            document.body.classList.remove('prod-track');
+        }
+        
+        trackToggle.addEventListener('change', (e) => {
+            if (e.target.checked) {
+                document.body.classList.remove('tech-track');
+                document.body.classList.add('prod-track');
+                localStorage.setItem('saad-portfolio-track', 'product');
+            } else {
+                document.body.classList.add('tech-track');
+                document.body.classList.remove('prod-track');
+                localStorage.setItem('saad-portfolio-track', 'technical');
+            }
+        });
+    }
+});

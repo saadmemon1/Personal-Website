@@ -8,7 +8,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="tech-track">
+    <!-- Track Toggle -->
+    <div class="track-toggle-container">
+        <span class="toggle-label tech-label">Technical</span>
+        <label class="switch">
+            <input type="checkbox" id="track-toggle">
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-label prod-label">Product / GTM</span>
+    </div>
+
 
 
     <!-- Hero Section -->
@@ -17,7 +27,9 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">Hi, I'm <span class="highlight">Saad</span></h1>
-                    <p class="hero-subtitle">Avid Learner & Problem Solver</p>
+                    <!-- <p class="hero-subtitle tech-only">Software Engineer & Problem Solver</p>
+                    <p class="hero-subtitle prod-only">Product Manager & Strategist</p> -->
+                    <p class="hero-subtitle">Avid Learner & Tech Enthusiast</p>
                     <p class="hero-description">
                         Welcome to my website! I'm a undergraduate student pursuing my degree in Computer Science at IBA Karachi,
                          with a knack for technology and automobiles.
@@ -61,18 +73,35 @@
                     </p>
                     <div class="skills">
                         <h3>Skills & Technologies</h3>
-                        <div class="skill-tags">
+                        <div class="skill-tags tech-only">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TypeScript</span>
                             <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Next.js</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">Git</span>
                             <span class="skill-tag">C++</span>
-                            <span class="skill-tag">R</span>
-                            <span class="skill-tag">Microsoft Excel & Power BI</span>
                             <span class="skill-tag">Swift</span>
-                            <span class="skill-tag">SwiftUI</span>
-                            <span class="skill-tag">Logisim</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">React / React Native</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">Prisma</span>
+                            <span class="skill-tag">Supabase</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                        <div class="skill-tags prod-only">
+                            <span class="skill-tag">JIRA</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Microsoft Excel</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Supabase</span>
+                            <span class="skill-tag">Agile/Scrum</span>
+                            <span class="skill-tag">Sprint Planning</span>
+                            <span class="skill-tag">Product Roadmapping</span>
+                            <span class="skill-tag">Market Analysis</span>
+                            <span class="skill-tag">GTM Strategy</span>
+                            <span class="skill-tag">Stakeholder Management</span>
                         </div>
                     </div>
                 </div>
@@ -86,83 +115,205 @@
             <h2 class="section-title">Resume</h2>
             <div class="resume-content">
                 <div class="resume-download">
-                    <a href="Saad Inam - Resume.pdf" download="Saad Inam - Resume.pdf" class="btn btn-primary">
-                        <i class="fas fa-download"></i> Download Resume
+                    <a href="Saad_Inam_Resume_Technical.pdf" download="Saad_Inam_Resume_Technical.pdf" class="btn btn-primary tech-only">
+                        <i class="fas fa-download"></i> Download Technical Resume
+                    </a>
+                    <a href="Saad_Inam_Resume_Product_GTM.pdf" download="Saad_Inam_Resume_Product_GTM.pdf" class="btn btn-primary prod-only">
+                        <i class="fas fa-download"></i> Download Product Management Resume
                     </a>
                 </div>
                 
                 <div class="resume-sections">
+                    <!-- Projects -->
+                    <div class="resume-section">
+                        <h3 class="resume-section-title">Projects</h3>
+                        
+                        <!-- Technical Projects -->
+                        <div class="resume-item tech-only">
+                            <div class="resume-item-header">
+                                <h4>Next Logistics - Shipment Management SaaS Platform</h4>
+                                <span class="resume-date">Live</span>
+                            </div>
+                            <p class="resume-company">Next.js 16, React 19, Supabase, Prisma 7, PostgreSQL</p>
+                            <ul class="resume-details">
+                                <li>Replaced manual iMile booking and handcrafted spreadsheet invoicing for 30-40 UAE shippers; platform is live and projected to grow monthly throughput from 12k to 15k shipments by eliminating human error across the full booking workflow.</li>
+                                <li>Automated cost-plus billing engine (margin fee + fulfillment fee + VAT/GST) generating a 5-6 AED margin per shipment across all clients, replacing error-prone manual invoices with automated PDF generation and COD settlement tracking.</li>
+                                <li>Created bulk upload supporting 500 shipments/batch, iMile API integration for real-time booking and webhook-based status tracking.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="resume-item tech-only">
+                            <div class="resume-item-header">
+                                <h4>WePay - Expense Sharing Application</h4>
+                            </div>
+                            <p class="resume-company">PostgreSQL, Node.js, Express, React Native, Expo</p>
+                            <ul class="resume-details">
+                                <li>Eliminated manual expense tracking for groups by delivering a full-stack expense-sharing platform: designed 8-entity relational schema, and implemented 16 stored procedures automating balance updates and settlement calculations.</li>
+                                <li>Cut development iteration time by building a clean RESTful API in Node.js/Express that the React Native (Expo) frontend consumed directly, enabling simultaneous frontend and backend development across the team.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="resume-item tech-only">
+                            <div class="resume-item-header">
+                                <h4>Pacman AI</h4>
+                            </div>
+                            <p class="resume-company">Python, Particle Swarm Optimization (PSO), Evolutionary Algorithms</p>
+                            <ul class="resume-details">
+                                <li>Achieved autonomous agent behaviour in Pacman using PSO and Evolutionary Algorithms, outperforming rule-based baselines by applying population-based optimization to real-time game decision-making.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Product Projects -->
+                        <div class="resume-item prod-only">
+                            <div class="resume-item-header">
+                                <h4>Next Logistics - Shipment Management SaaS Platform</h4>
+                                <span class="resume-date">Live | UAE Market</span>
+                            </div>
+                            <p class="resume-company">Next.js, Supabase, PostgreSQL | KSA Expansion Planned</p>
+                            <ul class="resume-details">
+                                <li>Identified core operational pain point for ~20 UAE shippers: manual iMile booking and handcrafted spreadsheet invoices generating consistent human error; designed and shipped a SaaS to automate the full workflow from booking to settlement.</li>
+                                <li>Platform live and projected to grow monthly shipments from 12k to 15k (25% increase) for the operator; generates a 5-6 AED margin per shipment through configurable per-client pricing with admin-controlled rates, taxes, and approval workflows.</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item prod-only">
+                            <div class="resume-item-header">
+                                <h4>Sabse Sasta - E-commerce Platform</h4>
+                                <span class="resume-date">Sprint Master / Product Owner</span>
+                            </div>
+                            <p class="resume-company">React Native + Expo, Next.js, Node.js, Prisma, Supabase, TypeScript | 3-App Monorepo</p>
+                            <ul class="resume-details">
+                                <li>Kept a 3-app product (web, mobile, backend) on track across sprints by owning the JIRA backlog, running sprint ceremonies, and resolving cross-team blockers - team shipped all planned features within timeline.</li>
+                                <li>Translated dual-portal requirements (customers + vendor approval pipeline) into actionable tickets; personally led Expo mobile development for the customer app.</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item prod-only">
+                            <div class="resume-item-header">
+                                <h4>WePay - Expense Sharing Application</h4>
+                            </div>
+                            <p class="resume-company">PostgreSQL, Node.js, Express, React Native</p>
+                            <ul class="resume-details">
+                                <li>Identified 3 critical gaps in Splitwise, Splid, and TriCount (feature paywalls, no real payment layer, balance inaccuracies from unsettled transactions) and shaped the product design around eliminating each one.</li>
+                                <li>Led database schema design and backend API development; team shipped a complete expense-sharing platform end-to-end within the course timeline.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <!-- Experience -->
                     <div class="resume-section">
                         <h3 class="resume-section-title">Experience</h3>
                         
-                        <div class="resume-item">
+                        <!-- Technical Experience Differences -->
+                        <div class="resume-item tech-only">
                             <div class="resume-item-header">
                                 <h4>Campus Leader</h4>
-                                <span class="resume-date">Oct 2025 – Present</span>
+                                <span class="resume-date">Oct 2025 - Apr 2026</span>
                             </div>
                             <p class="resume-company">Teach For Pakistan</p>
                             <ul class="resume-details">
-                                <li>Executed 3-phase recruitment strategy (Awareness, Event, Activation), engaging 150+ students</li>
-                                <li>Organized “Carnival Fest” with 100+ attendees, allowing students to interact with underprivileged communities and fellows</li>
+                                <li>Grew campus TFP reach to 150+ students through a 3-phase campaign (Awareness → Event → Activation); Carnival Fest drew 100+ attendees.</li>
                             </ul>
                         </div>
 
-                        <div class="resume-item">
+                        <div class="resume-item tech-only">
                             <div class="resume-item-header">
-                                <h4>Data Structures TA</h4>
+                                <h4>Data Structures Teaching Assistant</h4>
                                 <span class="resume-date">Aug 2025 - Dec 2025</span>
                             </div>
                             <p class="resume-company">IBA Karachi</p>
                             <ul class="resume-details">
-                                <li>Assisted instructor in weekly lab sessions for ~30 students, clarifying concepts and guiding hands-on practice</li>
-                                <li>Graded quizzes, weekly lab submissions and held office hours to address student queries</li>
+                                <li>Improved student throughput in weekly labs by personally clarifying blockers for ~30 students; office hours consistently reduced re-submission rates on graded quizzes and lab assignments.</li>
                             </ul>
                         </div>
 
-                        <div class="resume-item">
+                        <div class="resume-item tech-only">
                             <div class="resume-item-header">
                                 <h4>Software Engineering Fellow</h4>
-                                <span class="resume-date">Aug 2024 - Sept 2024</span>
+                                <span class="resume-date">Aug 2024 - Sep 2024</span>
                             </div>
                             <p class="resume-company">Headstarter</p>
                             <ul class="resume-details">
-                                <li>Built <a href="https://storage-organizer-beta.vercel.app" target="_blank">Storage Organizer</a>, an AI-powered web app for item management, deployed on Vercel</li>
-                                <li>Developed Studyfy AI, a tool for summarizing YouTube videos using transcription and OpenAI APIs</li>
+                                <li>Shipped 2 AI-powered products - Storage Organizer and Studyfy AI (YouTube video summarization via OpenAI transcription API) - both live on Vercel within a 2-month accelerator program.</li>
                             </ul>
                         </div>
 
-                         <div class="resume-item">
+                        <div class="resume-item tech-only">
                             <div class="resume-item-header">
                                 <h4>Project Intern</h4>
-                                <span class="resume-date">June 2024 - July 2024</span>
+                                <span class="resume-date">Jun 2024 - Jul 2024</span>
                             </div>
                             <p class="resume-company">SOLACE</p>
                             <ul class="resume-details">
-                                <li>Worked alongside a team of interns to implement machine learning algorithms and large language models for advanced data analysis, resulting in more accurate health assessments</li>
-                                <li>Reached out to various organizations, securing a deal with Gerrys, and conducted a wellness session to collect physical and mental health data for model testing</li>
+                                <li>Secured Gerrys as a corporate data partner, enabling health model testing on real-world physical and mental health data; applied ML algorithms and LLMs to improve assessment accuracy.</li>
                             </ul>
                         </div>
-                        <div class="resume-item">
+
+                        <div class="resume-item tech-only">
                             <div class="resume-item-header">
-                                <h4>Team Leader (Outgoing Global Exchange)</h4>
+                                <h4>Team Leader, Outgoing Global Exchange</h4>
                                 <span class="resume-date">Oct 2023 - Aug 2025</span>
                             </div>
                             <p class="resume-company">AIESEC in IBA</p>
                             <ul class="resume-details">
-                                <li>Directed Quality Assurance by verifying documentation, managing trackers, and coordinating with participants</li>
-                                <li>Spearheaded a recruitment tracker for MXP, improving data accuracy by 30% and generating strategic reports</li>
+                                <li>Cut data errors by 30% by building a recruitment tracker from scratch; maintained data integrity across full participant lifecycle through structured QA and documentation verification.</li>
                             </ul>
                         </div>
-                        <div class="resume-item">
+
+                        <!-- Product Experience Differences -->
+                        <div class="resume-item prod-only">
                             <div class="resume-item-header">
-                                <h4>Mathematics TA</h4>
-                                <span class="resume-date">Oct 2021 - July 2023</span>
+                                <h4>Campus Leader</h4>
+                                <span class="resume-date">Oct 2025 - Apr 2026</span>
                             </div>
-                            <p class="resume-company">Nixor College</p>
+                            <p class="resume-company">Teach For Pakistan</p>
                             <ul class="resume-details">
-                                <li>Graded 200+ assignments and exams, providing support that increased average student grades by 15%</li>
-                                <li>Conducted revision sessions for 50+ students, boosting exam pass rates by 20%</li>
+                                <li>Grew IBA campus TFP pipeline to 150+ engaged students through a structured 3-phase campaign (Awareness → Event → Activation) - a GTM-style rollout applied to student recruitment.</li>
+                                <li>Organized Carnival Fest drawing 100+ attendees, creating direct touchpoints between students and underprivileged communities; strengthened TFP's on-campus brand visibility.</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item prod-only">
+                            <div class="resume-item-header">
+                                <h4>Data Structures Teaching Assistant</h4>
+                                <span class="resume-date">Aug 2025 - Dec 2025</span>
+                            </div>
+                            <p class="resume-company">IBA Karachi</p>
+                            <ul class="resume-details">
+                                <li>Improved student performance in weekly lab sessions for ~30 students through targeted office hours and structured feedback on quizzes and assignments.</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item prod-only">
+                            <div class="resume-item-header">
+                                <h4>Software Engineering Fellow</h4>
+                                <span class="resume-date">Aug 2024 - Sep 2024</span>
+                            </div>
+                            <p class="resume-company">Headstarter</p>
+                            <ul class="resume-details">
+                                <li>Delivered 2 AI-powered products (Storage Organizer, Studyfy AI) within a 2-month accelerator; managed scope and deployment independently, both live on Vercel.</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item prod-only">
+                            <div class="resume-item-header">
+                                <h4>Project Intern</h4>
+                                <span class="resume-date">Jun 2024 - Jul 2024</span>
+                            </div>
+                            <p class="resume-company">SOLACE</p>
+                            <ul class="resume-details">
+                                <li>Secured Gerrys as a corporate data partner through direct outreach, unlocking access to real-world health data that enabled model testing across 20+ participants.</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item prod-only">
+                            <div class="resume-item-header">
+                                <h4>Team Leader, Outgoing Global Exchange</h4>
+                                <span class="resume-date">Oct 2023 - Aug 2025</span>
+                            </div>
+                            <p class="resume-company">AIESEC in IBA</p>
+                            <ul class="resume-details">
+                                <li>Cut data errors by 30% by building a recruitment tracker and maintaining a QA process for documentation and participant records.</li>
                             </ul>
                         </div>
                     </div>
@@ -172,35 +323,24 @@
                         <h3 class="resume-section-title">Education</h3>
                         <div class="resume-item">
                             <div class="resume-item-header">
-                                <h4>BS – Computer Science</h4>
-                                <span class="resume-date">2023 - 2027</span>
+                                <h4>Institute of Business Administration (IBA) Karachi</h4>
+                                <span class="resume-date">Aug 2023 - Jul 2027</span>
                             </div>
-                            <p class="resume-company">Institute of Business Administration Karachi (IBA)</p>
-                            <ul class="resume-details">
-                                <li>CGPA: 3.46</li>
-                                <!-- <li>Relevant coursework: Data Structures, Algorithms, Software Engineering</li> -->
-                            </ul>
+                            <p class="resume-company">BS Computer Science | CGPA: 3.46 | Dean's List - 3 consecutive semesters</p>
                         </div>
-                        <div class="resume-item">
+                        <div class="resume-item tech-only">
                             <div class="resume-item-header">
-                                <h4>A Levels</h4>
-                                <span class="resume-date">2021 - 2023</span>
+                                <h4>Nixor College</h4>
+                                <span class="resume-date">Aug 2021 - Jul 2023</span>
                             </div>
-                            <p class="resume-company">Nixor College</p>
-                            <ul class="resume-details">
-                                <li>Grades: 3As, 1B</li>
-                            </ul>
+                            <p class="resume-company">A Levels | 3As, 1B | Pursuit of Excellence Award, Dean's List, 18% Academic Scholarship</p>
                         </div>
-                        <div class="resume-item">
+                        <div class="resume-item prod-only">
                             <div class="resume-item-header">
-                                <h4>O Levels</h4>
-                                <span class="resume-date">2018 - 2021</span>
+                                <h4>Nixor College</h4>
+                                <span class="resume-date">Aug 2021 - Jul 2023</span>
                             </div>
-                            <p class="resume-company">Rockford Cambridge School (RCS)</p>
-                            <ul class="resume-details">
-                                <li>Grades: 4A*s, 2As, 3Bs</li>
-                                <!-- <li>Relevant coursework: Data Structures, Algorithms, Software Engineering</li> -->
-                            </ul>
+                            <p class="resume-company">A Levels | 3As, 1B | Pursuit of Excellence Award, Dean's List, 18% Academic Scholarship</p>
                         </div>
                     </div>
                 </div>
@@ -208,7 +348,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+<!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
@@ -246,7 +386,7 @@
                     <form id="contact-form" class="contact-form" action="https://formsubmit.co/aa0df48ea9f060a60f117d42b69b1570" method="POST">
                         <input type="hidden" name="_subject" value="New Contact Form Submission">
                         <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="https://saadmemon1.github.io/Personal-Website/">
+                        <input type="hidden" name="_next" value="https://saad-inam.vercel.app">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
