@@ -1,12 +1,12 @@
 **Saad Inam**
 
-<saadinam.mn@gmail.com> | 0303-2277365 | [LinkedIn](https://www.linkedin.com/in/saadinamm/) | [GitHub](https://github.com/saadmemon1) | [Portfolio](https://saadinam.com)
+<saadinam.mn@gmail.com> | 0303-2277365 | [LinkedIn](https://www.linkedin.com/in/saadinamm/) | [GitHub](https://github.com/saadmemon1) | [Portfolio](https://www.saadinam.com/)
 
 **EDUCATION**
 
 **Institute of Business Administration (IBA) Karachi** _Aug 2023 - Jul 2027_
 
-_BS Computer Science | CGPA: 3.46 | Dean's List - 3 consecutive semesters_
+_BS Computer Science | CGPA: 3.45 | Dean's List - 3 consecutive semesters_
 
 **Nixor College** _Aug 2021 - Jul 2023_
 
@@ -14,7 +14,7 @@ _A Levels | 3As, 1B | Pursuit of Excellence Award, Dean's List, 18% Academic Sch
 
 **PROJECTS**
 
-**Shipment Management SaaS Platform | Live in UAE & KSA**
+**Shipment Management B2B SaaS Platform | Live in UAE & KSA**
 
 _Next.js 16, React 19, Supabase, Prisma 7, PostgreSQL_
 
@@ -35,6 +35,11 @@ _Python, Particle Swarm Optimization (PSO), Evolutionary Algorithms_
 - Built autonomous Pacman controllers using PSO and Evolutionary Algorithms, outperforming rule-based baselines by applying population-based optimization in decision-making.
 
 **WORK EXPERIENCE**
+
+**10Pearls - Data Science Intern (Shine Program)** _Apr 2026 - Jun 2026_
+
+- Developed a serverless [AQI prediction system](https://huggingface.co/spaces/saad-iba/aqi-predictor) using Random Forest and XGBoost models, scheduling hourly and daily data pipelines to deliver 72-hour forecasts.
+- Optimized database query performance by implementing timestamp filters on the feature group, reducing data pipeline latency from over 100 seconds to under a second.
 
 **Teach For Pakistan - Campus Leader** _Oct 2025 - Apr 2026_
 
@@ -62,6 +67,7 @@ _Python, Particle Swarm Optimization (PSO), Evolutionary Algorithms_
 
 - **26th HEC Men's Shooting Championship - Air Rifleman | Nov 2024 - Jan 2025:** Competed nationally, qualifying and representing IBA Karachi in a high-pressure individual discipline.
 - **Out-of-thin-Air Game Jam - Team Captain | Sep 2023:** Led a 3-member team to design and ship original game "Pinpoint" from scratch in a 3-day jam.
+- **Faraz Khan Road Drive - Volunteer | Jun 2022:** Participated in a fundraiser road drive organized by Nixor Hospital, generating approximately PKR 3 Lacs.
 
 **TECHNICAL SKILLS**
 
@@ -69,4 +75,4 @@ _Python, Particle Swarm Optimization (PSO), Evolutionary Algorithms_
 
 **Frameworks:** Next.js, React, React Native, Expo, Node.js, Express, Prisma
 
-**Tools:** Supabase, PostgreSQL, Power BI, Microsoft Excel, Git
+**Tools:** Supabase, PostgreSQL, Git, Power BI, Microsoft Excel, GitHub Actions

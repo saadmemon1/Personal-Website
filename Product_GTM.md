@@ -1,12 +1,12 @@
 **Saad Inam**
 
-<saadinam.mn@gmail.com> | 0303-2277365 | [LinkedIn](https://www.linkedin.com/in/saadinamm/) | [GitHub](https://github.com/saadmemon1) | [Portfolio](https://saadinam.com)
+<saadinam.mn@gmail.com> | 0303-2277365 | [LinkedIn](https://www.linkedin.com/in/saadinamm/) | [GitHub](https://github.com/saadmemon1) | [Portfolio](https://www.saadinam.com/)
 
 **EDUCATION**
 
 **Institute of Business Administration (IBA) Karachi** _Aug 2023 - Jul 2027_
 
-_BS Computer Science | CGPA: 3.46 | Dean's List - 3 consecutive semesters_
+_BS Computer Science | CGPA: 3.45 | Dean's List - 3 consecutive semesters_
 
 **Nixor College** _Aug 2021 - Jul 2023_
 
@@ -14,7 +14,7 @@ _A Levels | 3As, 1B | Pursuit of Excellence Award, Dean's List, 18% Academic Sch
 
 **PROJECTS**
 
-**Shipment Management SaaS | Live in UAE & KSA**
+**Shipment Management B2B SaaS | Live in UAE & KSA**
 
 _Next.js, Supabase, PostgreSQL_
 
@@ -37,6 +37,10 @@ _PostgreSQL, Node.js, Express, React Native | Database Systems Project_
 
 **WORK EXPERIENCE**
 
+**10Pearls - Data Science Intern** _Apr 2026 - Jun 2026_
+
+- Developed the Karachi [AQI forecasting dashboard](https://huggingface.co/spaces/saad-iba/aqi-predictor), automating data updates and reducing load times from over 100 seconds to under a second.
+
 **Teach For Pakistan - Campus Leader** _Oct 2025 - Apr 2026_
 
 - Grew IBA campus TFP pipeline to 150+ engaged students through a structured 3-phase campaign (Awareness -> Event -> Activation); a GTM-style rollout applied to student recruitment.
@@ -48,7 +52,7 @@ _PostgreSQL, Node.js, Express, React Native | Database Systems Project_
 
 **Headstarter - Software Engineering Fellow** _Aug 2024 - Sep 2024_
 
-- Delivered 2 AI products (Storage Organizer, Studyfy AI) within a 2-month accelerator; both live on Vercel.
+- Delivered 2 AI products ([Storage Organizer](https://storage-organizer-beta.vercel.app/), [Studyfy AI](https://studyfy-ai-beta.vercel.app/)) within a 2-month accelerator; both live on Vercel.
 
 **SOLACE - Project Intern** _Jun 2024 - Jul 2024_
 
@@ -68,7 +72,7 @@ _PostgreSQL, Node.js, Express, React Native | Database Systems Project_
 
 **SKILLS**
 
-**Tools:** JIRA, Power BI, Microsoft Excel, Git, Supabase
+**Tools:** JIRA, Power BI, Microsoft Excel, Git, GitHub Actions, Supabase
 
 **Technical:** SQL, TypeScript, Python, React Native
 
