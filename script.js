@@ -283,43 +283,139 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxVideo = document.getElementById('lightbox-video');
     const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxNext = document.querySelector('.lightbox-next');
+    const lightboxCounter = document.getElementById('lightbox-counter');
 
-    if (lightbox && lightboxImage) {
-        document.querySelectorAll('.gallery-item').forEach((item) => {
-            item.addEventListener('click', () => {
-                const fullSrc = item.getAttribute('data-full') || item.querySelector('img')?.src;
-                const altText = item.querySelector('img')?.alt || 'Gallery image';
-                if (!fullSrc) {
-                    return;
-                }
-                lightboxImage.src = fullSrc;
-                lightboxImage.alt = altText;
-                lightbox.classList.add('open');
-                lightbox.setAttribute('aria-hidden', 'false');
+    // Scoped image list — only images from the carousel that was clicked
+    let lightboxItems = [];
+    let lightboxIndex = 0;
+
+    const buildItemList = (fromEl) => {
+        // Scope to the parent .featured-gallery, falling back to document
+        const scope = fromEl.closest('.featured-gallery') || document;
+        lightboxItems = [];
+        scope.querySelectorAll('.gallery-item[data-full], .gallery-item[data-video]').forEach((item) => {
+            const imgSrc  = item.getAttribute('data-full');
+            const vidSrc  = item.getAttribute('data-video');
+            const alt     = item.querySelector('img')?.alt || 'Gallery media';
+            lightboxItems.push({ imgSrc, vidSrc, alt, el: item });
+        });
+    };
+
+    const showLightboxItem = (item) => {
+        if (item.vidSrc) {
+            // Video mode
+            lightboxImage.style.display = 'none';
+            lightboxVideo.style.display = 'block';
+            lightboxVideo.src = item.vidSrc;
+            lightboxVideo.load();
+        } else {
+            // Image mode
+            lightboxVideo.pause();
+            lightboxVideo.src = '';
+            lightboxVideo.style.display = 'none';
+            lightboxImage.style.display = '';
+            lightboxImage.src = item.imgSrc;
+            lightboxImage.alt = item.alt;
+        }
+    };
+
+    const openLightbox = (index) => {
+        if (!lightboxItems.length) return;
+        lightboxIndex = ((index % lightboxItems.length) + lightboxItems.length) % lightboxItems.length;
+        showLightboxItem(lightboxItems[lightboxIndex]);
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        updateNav();
+    };
+
+    const updateNav = () => {
+        if (lightboxCounter) {
+            lightboxCounter.textContent = `${lightboxIndex + 1} / ${lightboxItems.length}`;
+        }
+        const hide = lightboxItems.length <= 1;
+        if (lightboxPrev) lightboxPrev.classList.toggle('hidden', hide);
+        if (lightboxNext) lightboxNext.classList.toggle('hidden', hide);
+    };
+
+    const closeLightbox = () => {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImage.src = '';
+        if (lightboxVideo) {
+            lightboxVideo.pause();
+            lightboxVideo.src = '';
+            lightboxVideo.style.display = 'none';
+        }
+        lightboxImage.style.display = '';
+    };
+
+    if (lightbox) {
+        // Image gallery items
+        document.querySelectorAll('.gallery-item[data-full], .gallery-item[data-video]').forEach((item) => {
+            item.addEventListener('click', (e) => {
+                e.stopPropagation();
+                buildItemList(item);
+                const idx = lightboxItems.findIndex(i => i.el === item);
+                openLightbox(idx >= 0 ? idx : 0);
             });
         });
 
-        const closeLightbox = () => {
-            lightbox.classList.remove('open');
-            lightbox.setAttribute('aria-hidden', 'true');
-            lightboxImage.src = '';
-        };
+        if (lightboxPrev) lightboxPrev.addEventListener('click', () => openLightbox(lightboxIndex - 1));
+        if (lightboxNext) lightboxNext.addEventListener('click', () => openLightbox(lightboxIndex + 1));
 
-        lightbox.addEventListener('click', (event) => {
-            if (event.target === lightbox) {
-                closeLightbox();
-            }
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
         });
 
-        if (lightboxClose) {
-            lightboxClose.addEventListener('click', closeLightbox);
-        }
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
 
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && lightbox.classList.contains('open')) {
-                closeLightbox();
-            }
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'Escape')      closeLightbox();
+            if (e.key === 'ArrowLeft')   openLightbox(lightboxIndex - 1);
+            if (e.key === 'ArrowRight')  openLightbox(lightboxIndex + 1);
         });
     }
+
+    // Video-aware carousel: play inline video when its slide is visible, pause when not
+    document.querySelectorAll('.featured-gallery').forEach((gallery) => {
+        if (!gallery.querySelector('video')) return;
+
+        const allSlides = Array.from(gallery.children);
+
+        const syncVideos = () => {
+            allSlides.forEach((slide, i) => {
+                const video = slide.querySelector('video');
+                if (!video) return;
+                const slideLeft = i * gallery.clientWidth;
+                const isActive = Math.abs(gallery.scrollLeft - slideLeft) < gallery.clientWidth * 0.5;
+                if (isActive) {
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                }
+            });
+        };
+
+        gallery.addEventListener('scroll', syncVideos, { passive: true });
+        const firstVideo = gallery.querySelector('video');
+        if (firstVideo) firstVideo.play().catch(() => {});
+    });
+});
+
+// Clickable featured cards — open data-href in new tab, skip clicks on media/interactive elements
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.featured-card[data-href]').forEach((card) => {
+        card.addEventListener('click', (e) => {
+            const ignored = e.target.closest(
+                '.featured-media, .carousel-button, .gallery-item, video, a'
+            );
+            if (ignored) return;
+            window.open(card.dataset.href, '_blank', 'noopener,noreferrer');
+        });
+    });
 });

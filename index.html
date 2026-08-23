@@ -92,6 +92,9 @@
                             <span class="skill-tag">Microsoft Excel</span>
                             <span class="skill-tag">Git</span>
                             <span class="skill-tag">GitHub Actions</span>
+                            <span class="skill-tag">Claude Code</span>
+                            <span class="skill-tag">GitHub Copilot</span>
+                            <span class="skill-tag">Hermes Agent</span>
                         </div>
                         <div class="skill-tags prod-only">
                             <span class="skill-tag">JIRA</span>
@@ -100,6 +103,9 @@
                             <span class="skill-tag">Git</span>
                             <span class="skill-tag">GitHub Actions</span>
                             <span class="skill-tag">Supabase</span>
+                            <span class="skill-tag">Claude Code</span>
+                            <span class="skill-tag">GitHub Copilot</span>
+                            <span class="skill-tag">Hermes Agent</span>
                             <span class="skill-tag">SQL</span>
                             <span class="skill-tag">TypeScript</span>
                             <span class="skill-tag">Python</span>
@@ -122,6 +128,7 @@
         <div class="container">
             <h2 class="section-title">Featured Work</h2>
             <div class="featured-grid">
+                <!-- Shipment Management SaaS -->
                 <article class="featured-card" style="--order-tech: 1; --order-prod: 2;">
                     <div class="featured-media">
                         <video controls>
@@ -136,13 +143,59 @@
                         </div>
                         <p class="featured-subtitle">Next.js, Supabase, PostgreSQL</p>
                         <ul class="featured-points">
-                            <li>Automated shipment booking, billing, and settlement workflows for UAE & KSA operators.</li>
+                            <li>Automated shipment booking, billing, and settlement workflows for UAE &amp; KSA operators.</li>
                             <li>Supports peak throughput of 2,000+ shipments daily with bulk upload and webhook tracking.</li>
                         </ul>
                     </div>
                 </article>
 
-                <article class="featured-card tech-only" style="--order-tech: 2;">
+                <!-- ReconAI -->
+                <article class="featured-card featured-card--link" data-href="https://github.com/saadmemon1/ReconAI" style="--order-tech: 2; --order-prod: 1;">
+                    <div class="featured-media">
+                        <div class="featured-carousel" data-gallery="reconai">
+                            <button class="carousel-button prev" type="button" aria-label="Previous image">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="featured-gallery" style="--gallery-ratio: 16 / 9;">
+                                <div class="gallery-item" data-video="media/reconai/demo.mp4" style="flex:0 0 100%;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--bg-darker);cursor:pointer;">
+                                    <video style="width:100%;height:100%;object-fit:contain;" autoplay muted loop playsinline>
+                                        <source src="media/reconai/demo.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <button class="gallery-item" type="button" data-full="media/reconai/evidence-orbital.png">
+                                    <img src="media/reconai/evidence-orbital.png" alt="ReconAI evidence viewer">
+                                </button>
+                                <button class="gallery-item" type="button" data-full="media/reconai/files-tab.png">
+                                    <img src="media/reconai/files-tab.png" alt="ReconAI files tab">
+                                </button>
+                                <button class="gallery-item" type="button" data-full="media/reconai/report.png">
+                                    <img src="media/reconai/report.png" alt="ReconAI reconciliation report">
+                                </button>
+                                <button class="gallery-item" type="button" data-full="media/reconai/supplier-email.png">
+                                    <img src="media/reconai/supplier-email.png" alt="ReconAI auto-drafted supplier email">
+                                </button>
+                            </div>
+                            <button class="carousel-button next" type="button" aria-label="Next image">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="featured-body">
+                        <div class="featured-header">
+                            <h3>ReconAI</h3>
+                            <span class="featured-pill">Agentic AI</span>
+                        </div>
+                        <p class="featured-subtitle">Next.js, LLM, Document Intelligence</p>
+                        <ul class="featured-points">
+                            <li>Built end-to-end in Next.js at Providus Technologies — from document upload and parsing to LLM-powered reconciliation with an evidence viewer and auto-drafted supplier emails.</li>
+                            <li>Uncovered through expert interviews that manual reconciliation costs businesses $100–115 per discrepancy per document; designed 6 reconciliation workflows that expanded scope into PO creation and vendor selection agents.</li>
+                            <li>Ran competitive analysis against Kognitos, LandingAI DocuFlow, and Staple AI; compiled market feedback from 6 expert calls into a report that shaped product direction.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- AQI Prediction System -->
+                <article class="featured-card featured-card--link tech-only" data-href="https://github.com/saadmemon1/aqi-predictor" style="--order-tech: 3;">
                     <div class="featured-media">
                         <div class="featured-carousel" data-gallery="aqi-predictor">
                             <div class="featured-gallery" style="--gallery-ratio: 16 / 9;">
@@ -155,7 +208,7 @@
                     <div class="featured-body">
                         <div class="featured-header">
                             <h3>AQI Prediction System</h3>
-                            <span class="featured-pill">Data Science</span>
+                            <span class="featured-pill">ML</span>
                         </div>
                         <p class="featured-subtitle">Python, Random Forest, XGBoost</p>
                         <ul class="featured-points">
@@ -165,7 +218,8 @@
                     </div>
                 </article>
 
-                <article class="featured-card tech-only" style="--order-tech: 3;">
+                <!-- WePay -->
+                <article class="featured-card featured-card--link tech-only" data-href="https://github.com/mahnoor-mughal/db-2025-expense-sharing" style="--order-tech: 4;">
                     <div class="featured-media">
                         <div class="featured-carousel" data-gallery="wepay">
                             <button class="carousel-button prev" type="button" aria-label="Previous image">
@@ -209,7 +263,8 @@
                     </div>
                 </article>
 
-                <article class="featured-card" style="--order-tech: 4; --order-prod: 1;">
+                <!-- Auto Sales Power BI Report (Product/GTM track only) -->
+                <article class="featured-card prod-only" style="--order-prod: 3;">
                     <div class="featured-media">
                         <div class="featured-carousel" data-gallery="auto-sales">
                             <button class="carousel-button prev" type="button" aria-label="Previous image">
@@ -256,7 +311,7 @@
                         </div>
                         <p class="featured-subtitle">Kaggle dataset • Multi-page report</p>
                         <div class="featured-notes">
-                            <h4>Insights & Recommendations</h4>
+                            <h4>Insights &amp; Recommendations</h4>
                             <ul class="featured-points">
                                 <li>$9.76M revenue across 2,747 orders; Classic Cars lead ($3.84M) while Trains are lowest ($226K).</li>
                                 <li>USA ($3M+) and Spain ($1.2M) dominate revenue; Ships underperform outside core markets.</li>
@@ -306,7 +361,8 @@
 
                         <div class="resume-item tech-only">
                             <div class="resume-item-header">
-                                <h4>WePay - Expense Sharing Application</h4>
+                                <h4>WePay – Expense Sharing Application</h4>
+                                <a href="https://github.com/mahnoor-mughal/db-2025-expense-sharing" target="_blank" class="resume-date" style="font-size:0.85rem;"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                             <p class="resume-company">PostgreSQL, Node.js, Express, React Native, Expo | Database Systems Project</p>
                             <ul class="resume-details">
@@ -317,6 +373,7 @@
                         <div class="resume-item tech-only">
                             <div class="resume-item-header">
                                 <h4>Pacman AI</h4>
+                                <a href="https://github.com/saadmemon1/Pacman/" target="_blank" class="resume-date" style="font-size:0.85rem;"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                             <p class="resume-company">Python, Particle Swarm Optimization (PSO), Evolutionary Algorithms</p>
                             <ul class="resume-details">
@@ -366,6 +423,20 @@
                         <h3 class="resume-section-title">Experience</h3>
 
                         <!-- Technical Experience -->
+                        <div class="resume-item tech-only">
+                            <div class="resume-item-header">
+                                <h4>Product Management Intern</h4>
+                                <span class="resume-date">Jun 2026 - Aug 2026</span>
+                            </div>
+                            <p class="resume-company">Providus Technologies</p>
+                            <ul class="resume-details">
+                                <li>Manually audited 499 fields across 53 documents spanning handwritten, scanned, and digital-born formats, measuring parsing accuracy and identifying recurring failure patterns that fed directly into product fixes.</li>
+                                <li>Built an end-to-end agentic procure-to-pay (P2P) cycle, automating vendor selection, purchase order creation, and document reconciliation.</li>
+                                <li>Built <a href="https://github.com/saadmemon1/ReconAI" target="_blank">ReconAI</a> end-to-end in Next.js, from document upload and parsing to LLM-powered reconciliation with an evidence viewer and auto-drafted supplier emails.</li>
+                                <li>Conducted competitive analysis of document intelligence layer, identifying feature gaps and product positioning opportunities.</li>
+                            </ul>
+                        </div>
+
                         <div class="resume-item tech-only">
                             <div class="resume-item-header">
                                 <h4>Data Science Intern (Shine Program)</h4>
@@ -435,6 +506,20 @@
                         </div>
 
                         <!-- Product Experience -->
+                        <div class="resume-item prod-only">
+                            <div class="resume-item-header">
+                                <h4>Product Management Intern</h4>
+                                <span class="resume-date">Jun 2026 - Aug 2026</span>
+                            </div>
+                            <p class="resume-company">Providus Technologies</p>
+                            <ul class="resume-details">
+                                <li>Ran competitive analysis against Kognitos, LandingAI DocuFlow, and Staple AI, then compiled market feedback from 6 expert calls into a report that shaped product direction.</li>
+                                <li>Uncovered through expert interviews that manual reconciliation can cost businesses $100–115 per discrepancy per document, reinforcing the need for ReconAI.</li>
+                                <li>Designed the reconciliation logic across 6 workflows, which sharpened the core reconciliation agent and expanded product scope into a PO creation agent and vendor selection agent.</li>
+                                <li>Built and shipped <a href="https://github.com/saadmemon1/ReconAI" target="_blank">ReconAI</a> in Next.js, taking the product from research and design to a working application.</li>
+                            </ul>
+                        </div>
+
                         <div class="resume-item prod-only">
                             <div class="resume-item-header">
                                 <h4>Data Science Intern</h4>
@@ -602,11 +687,11 @@
                         <div class="resume-item tech-only">
                             <p class="resume-company"><strong>Languages:</strong> Python, TypeScript, JavaScript, C++, SQL</p>
                             <p class="resume-company"><strong>Frameworks:</strong> Next.js, React, React Native, Expo, Node.js, Express, Prisma</p>
-                            <p class="resume-company"><strong>Tools:</strong> Supabase, PostgreSQL, Git, Power BI, Microsoft Excel, GitHub Actions</p>
+                            <p class="resume-company"><strong>Tools:</strong> Supabase, PostgreSQL, Git, Power BI, Microsoft Excel, GitHub Actions, Claude Code, GitHub Copilot, Hermes Agent</p>
                         </div>
 
                         <div class="resume-item prod-only">
-                            <p class="resume-company"><strong>Tools:</strong> JIRA, Power BI, Microsoft Excel, Git, GitHub Actions, Supabase</p>
+                            <p class="resume-company"><strong>Tools:</strong> JIRA, Power BI, Microsoft Excel, Git, GitHub Actions, Supabase, Claude Code, GitHub Copilot, Hermes Agent</p>
                             <p class="resume-company"><strong>Technical:</strong> SQL, TypeScript, Python, React Native</p>
                             <p class="resume-company"><strong>Concepts:</strong> Agile/Scrum, Sprint Planning, Product Roadmapping, Market Analysis, GTM Strategy, Stakeholder Management</p>
                         </div>
@@ -700,7 +785,15 @@
         <button class="lightbox-close" type="button" aria-label="Close image">
             <i class="fas fa-times"></i>
         </button>
+        <button class="lightbox-prev" type="button" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
         <img id="lightbox-image" alt="">
+        <video id="lightbox-video" controls></video>
+        <button class="lightbox-next" type="button" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
     </div>
 
     <script src="script.js"></script>

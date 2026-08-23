@@ -239,6 +239,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
+    align-items: start;
 }
 
 .featured-card {
@@ -250,6 +251,16 @@ section {
     display: flex;
     flex-direction: column;
     order: var(--order-tech);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.featured-card--link {
+    cursor: pointer;
+}
+
+.featured-card--link:hover {
+    box-shadow: 0 24px 48px -8px rgba(0, 0, 0, 0.75), 0 8px 20px -4px rgba(0, 0, 0, 0.5);
+    transform: translateY(-4px);
 }
 
 body.prod-track .featured-card {
@@ -398,6 +409,28 @@ body.prod-track .featured-card {
     font-size: 1.1rem;
 }
 
+.featured-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+}
+
+.featured-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.featured-link:hover {
+    opacity: 0.75;
+}
+
 /* Lightbox */
 .lightbox {
     position: fixed;
@@ -422,6 +455,14 @@ body.prod-track .featured-card {
     box-shadow: var(--shadow-lg);
 }
 
+#lightbox-video {
+    max-width: 92vw;
+    max-height: 92vh;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    display: none;
+}
+
 .lightbox-close {
     position: absolute;
     top: 20px;
@@ -436,6 +477,57 @@ body.prod-track .featured-card {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    z-index: 1;
+    transition: background 0.2s ease;
+}
+
+.lightbox-close:hover {
+    background: rgba(15, 23, 42, 1);
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(15, 23, 42, 0.8);
+    color: var(--text-dark);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.2s ease;
+    z-index: 1;
+}
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: rgba(15, 23, 42, 1);
+}
+
+.lightbox-prev.hidden,
+.lightbox-next.hidden {
+    display: none;
+}
+
+.lightbox-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(15, 23, 42, 0.7);
+    color: var(--text-light);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
 }
 
 /* Resume Section */

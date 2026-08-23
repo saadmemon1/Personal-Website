@@ -1,78 +1,135 @@
 **Saad Inam**
 
-<saadinam.mn@gmail.com> | 0303-2277365 | [LinkedIn](https://www.linkedin.com/in/saadinamm/) | [GitHub](https://github.com/saadmemon1) | [Portfolio](https://www.saadinam.com/)
+saadinam.mn@gmail.com \| 0303-2277365 \|
+[LinkedIn](https://www.linkedin.com/in/saadinamm/) \|
+[GitHub](https://github.com/saadmemon1) \|
+[Portfolio](https://www.saadinam.com/)
 
 **EDUCATION**
 
-**Institute of Business Administration (IBA) Karachi** _Aug 2023 - Jul 2027_
+**Institute of Business Administration (IBA) Karachi** *Aug 2023 -- Jun
+2027*
 
-_BS Computer Science | CGPA: 3.45 | Dean's List - 3 consecutive semesters_
+*BS Computer Science \| CGPA: 3.45 \| Dean's List -- 3 consecutive
+semesters*
 
-**Nixor College** _Aug 2021 - Jul 2023_
+**Nixor College** *Aug 2021 -- Jun 2023*
 
-_A Levels | 3As, 1B | Pursuit of Excellence Award, Dean's List, 18% Academic Scholarship_
+*A Levels \| 3As, 1B \| Pursuit of Excellence Award, Dean's List, 18%
+Academic Scholarship*
 
 **PROJECTS**
 
-**Shipment Management B2B SaaS Platform | Live in UAE & KSA**
+**Shipment Management B2B SaaS Platform \| Live in UAE & KSA**
 
-_Next.js 16, React 19, Supabase, Prisma 7, PostgreSQL_
+*Next.js 16, React 19, Supabase, Prisma 7, PostgreSQL*
 
-- Replaced manual iMile booking and spreadsheet invoicing for ~50 shippers, scaling to daily peak volumes of 2,000 and 3,000 shipments per market.
-- Automated cost-plus billing engine, PDF invoice generation, and COD settlement tracking, removing manual invoicing entirely.
-- Created bulk upload supporting 500 shipments/batch, webhook status tracking, and waybill printing.
+- Replaced manual iMile booking and spreadsheet invoicing for \~50
+  shippers, scaling to daily peak volumes of 2,000 and 3,000 shipments
+  per market.
 
-**WePay - Expense Sharing Application**
+- Automated cost-plus billing engine, PDF invoice generation, and COD
+  settlement tracking, removing manual invoicing entirely.
 
-_PostgreSQL, Node.js, Express, React Native, Expo | Database Systems Project_
+- Created bulk upload supporting 500 shipments/batch, webhook status
+  tracking, and waybill printing.
 
-- Designed an 8-entity schema and wrote all DDL statements, implementing 16 stored procedures to automate balance updates and settlements.
+**WePay -- Expense Sharing Application \|
+[GitHub](https://github.com/mahnoor-mughal/db-2025-expense-sharing)**
 
-**Pacman AI**
+*PostgreSQL, Node.js, Express, React Native, Expo \| Database Systems
+Project*
 
-_Python, Particle Swarm Optimization (PSO), Evolutionary Algorithms_
+- Designed an 8-entity schema and wrote all DDL statements, implementing
+  16 stored procedures to automate balance updates and settlements.
 
-- Built autonomous Pacman controllers using PSO and Evolutionary Algorithms, outperforming rule-based baselines by applying population-based optimization in decision-making.
+**Pacman AI \| [GitHub](https://github.com/saadmemon1/Pacman/)**
+
+*Python*
+
+- Built autonomous Pacman controllers using PSO and Evolutionary
+  Algorithms, outperforming rule-based baselines by applying
+  population-based optimization in decision-making.
 
 **WORK EXPERIENCE**
 
-**10Pearls - Data Science Intern (Shine Program)** _Apr 2026 - Jun 2026_
+**Providus Technologies -- Product Management Intern** *Jun 2026 -- Aug
+2026*
 
-- Developed a serverless [AQI prediction system](https://huggingface.co/spaces/saad-iba/aqi-predictor) using Random Forest and XGBoost models, scheduling hourly and daily data pipelines to deliver 72-hour forecasts.
-- Optimized database query performance by implementing timestamp filters on the feature group, reducing data pipeline latency from over 100 seconds to under a second.
+- Manually audited 499 fields across 53 documents spanning handwritten,
+  scanned, and digital-born formats, measuring parsing accuracy and
+  identifying recurring failure patterns that fed directly into product
+  fixes.
 
-**Teach For Pakistan - Campus Leader** _Oct 2025 - Apr 2026_
+- Built an end-to-end agentic procure-to-pay (P2P) cycle, automating
+  vendor selection, purchase order creation, and document
+  reconciliation.
 
-- Engaged 150+ students at IBA through a 3-phase outreach campaign; organized Carnival Fest with 100+ attendees to connect students with TFP fellows and communities they serve.
+- Built [ReconAI](https://github.com/saadmemon1/ReconAI) end-to-end in
+  Next.js, from document upload and parsing to LLM-powered
+  reconciliation with an evidence viewer and auto-drafted supplier
+  emails.
 
-**IBA Karachi - Data Structures Teaching Assistant** _Aug 2025 - Dec 2025_
+- Conducted competitive analysis of document intelligence layer,
+  identifying feature gaps and product positioning opportunities.
 
-- Ran weekly lab sessions and office hours for ~30 students, graded quizzes and submissions to improve performance throughout the semester.
+**10Pearls -- Data Science Intern (Shine Program)** *Apr 2026 -- Jun
+2026*
 
-**Headstarter - Software Engineering Fellow** _Aug 2024 - Sep 2024_
+- Developed a serverless [AQI prediction
+  system](https://github.com/saadmemon1/aqi-predictor) using Random
+  Forest and XGBoost models, scheduling hourly and daily data pipelines
+  to deliver 72-hour forecasts.
 
-- Shipped 2 AI products - [Storage Organizer](https://storage-organizer-beta.vercel.app/) and [Studyfy AI](https://studyfy-ai-beta.vercel.app/) (YouTube video summarization via OpenAI transcription API) - both live on Vercel within a 2-month accelerator.
+- Optimized database query performance by implementing timestamp filters
+  on the feature group, reducing data pipeline latency from over 100
+  seconds to under a second.
 
-**SOLACE - Project Intern** _Jun 2024 - Jul 2024_
+**Teach For Pakistan -- Campus Leader** *Oct 2025 -- Apr 2026*
 
-- Secured Gerrys as a corporate data partner, enabling health model testing on real-world physical and mental health data.
+- Engaged 150+ students at IBA through a 3-phase outreach campaign;
+  organized Carnival Fest with 100+ attendees to connect students with
+  TFP fellows and communities they serve.
 
-**AIESEC in IBA** _Oct 2023 - Aug 2025_
+**IBA Karachi -- Data Structures Teaching Assistant** *Aug 2025 -- Dec
+2025*
 
-- Recruited new members by conducting panel interviews and group discussions, evaluating candidates on cultural fit and values alignment.
-- Sent 34 Global Volunteers across 5+ countries by managing compliance tracking and documentation.
-- Built a recruitment tracker from scratch that cut data errors by 30%.
+- Ran weekly lab sessions and office hours for \~30 students, graded
+  quizzes and submissions to improve performance throughout the
+  semester.
+
+**Headstarter -- Software Engineering Fellow** *Aug 2024 -- Sep 2024*
+
+- Shipped 2 AI products -- [Storage
+  Organizer](https://storage-organizer-beta.vercel.app/) and [Studyfy
+  AI](https://studyfy-ai-beta.vercel.app/) (YouTube video summarization
+  via OpenAI transcription API) -- both live on Vercel within a 2-month
+  accelerator.
+
+**AIESEC in IBA** *Oct 2023 -- Aug 2025*
+
+- Recruited new members by conducting panel interviews and group
+  discussions, evaluating candidates on cultural fit and values
+  alignment.
+
+- Sent 34 Global Volunteers across 5+ countries by managing compliance
+  tracking and documentation.
 
 **EXTRACURRICULAR ACTIVITIES**
 
-- **26th HEC Men's Shooting Championship - Air Rifleman | Nov 2024 - Jan 2025:** Competed nationally, qualifying and representing IBA Karachi in a high-pressure individual discipline.
-- **Out-of-thin-Air Game Jam - Team Captain | Sep 2023:** Led a 3-member team to design and ship original game "Pinpoint" from scratch in a 3-day jam.
-- **Faraz Khan Road Drive - Volunteer | Jun 2022:** Participated in a fundraiser road drive organized by Nixor Hospital, generating approximately PKR 3 Lacs.
+- **26th HEC Men's Shooting Championship -- Air Rifleman \| Nov 2024 --
+  Jan 2025:** Competed nationally, qualifying and representing IBA
+  Karachi in a high-pressure individual discipline.
+
+- **Out-of-thin-Air Game Jam -- Team Captain \| Sep 2023:** Led 3-member
+  team to design and ship original game 'Pinpoint'.
 
 **TECHNICAL SKILLS**
 
 **Languages:** Python, TypeScript, JavaScript, C++, SQL
 
-**Frameworks:** Next.js, React, React Native, Expo, Node.js, Express, Prisma
+**Frameworks:** Next.js, React, React Native, Expo, Node.js, Express,
+Prisma
 
-**Tools:** Supabase, PostgreSQL, Git, Power BI, Microsoft Excel, GitHub Actions
+**Tools:** Supabase, PostgreSQL, Git, Power BI, Microsoft Excel, GitHub
+Actions, Claude Code, GitHub Copilot, Hermes Agent
