@@ -56,23 +56,25 @@ Academic Scholarship*
 
 **WORK EXPERIENCE**
 
-**Providus Technologies -- Product Management Intern** *Jun -- Aug 2026*
+**Providus Technologies -- Associate Product Engineer** *Jun 2026 --
+Present*
 
 - Ran competitive analysis against Kognitos, LandingAI DocuFlow, and
-  Staple AI, then compiled market feedback from 6 expert calls into a
-  report that shaped product direction.
+  Staple AI, identifying new workflow ideas that shaped the product
+  roadmap.
 
 - Uncovered through expert interviews that manual reconciliation can
   cost businesses \$100-115 per discrepancy per document, reinforcing
-  the need for ReconAI.
+  the need to design and build
+  [ReconAI](https://github.com/saadmemon1/ReconAI).
 
-- Designed the reconciliation logic across 6 workflows, which sharpened
-  the core reconciliation agent and expanded product scope into a PO
-  creation agent and vendor selection agent.
+- Designed the agentic procure-to-pay (P2P) cycle covering vendor
+  selection, purchase order creation, and document reconciliation.
 
-- Built and shipped [ReconAI](https://github.com/saadmemon1/ReconAI) in
-  Next.js, taking the product from research and design to a working
-  application.
+<!-- -->
+
+- Audited 53 procurement documents to measure DocAI\'s parsing accuracy,
+  identifying failure patterns that fed directly into product fixes.
 
 **10Pearls -- Data Science Intern** *Apr 2026 -- Jun 2026*
 
@@ -91,22 +93,11 @@ Academic Scholarship*
   touchpoints between students and underprivileged communities;
   strengthened TFP's on-campus brand visibility.
 
-**IBA Karachi -- Data Structures Teaching Assistant** *Aug 2025 -- Dec
-2025*
-
-- Supported \~30 students through weekly lab sessions, office hours and
-  graded feedback, helping improving understanding and performance.
-
-**AIESEC in IBA** *Oct 2023 -- Aug 2025*
-
-- Recruited new members by conducting panel interviews and group
-  discussions, evaluating candidates on cultural fit and values
-  alignment.
-
-- Sent 34 Global Volunteers across 5+ countries by managing compliance
-  tracking and documentation.
-
 **EXTRACURRICULAR ACTIVITIES**
+
+- **AIESEC in IBA \| Oct 2023 - Aug 2025:** Recruited new members by
+  conducting panel interviews and group discussions, evaluating
+  candidates on cultural fit and values alignment.
 
 - **26th HEC Men's Shooting Championship -- Air Rifleman \| Nov 2024 --
   Jan 2025:** Competed nationally, representing IBA Karachi in a

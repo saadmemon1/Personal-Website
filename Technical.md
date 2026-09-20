@@ -53,25 +53,22 @@ Project*
 
 **WORK EXPERIENCE**
 
-**Providus Technologies -- Product Management Intern** *Jun 2026 -- Aug
-2026*
-
-- Manually audited 499 fields across 53 documents spanning handwritten,
-  scanned, and digital-born formats, measuring parsing accuracy and
-  identifying recurring failure patterns that fed directly into product
-  fixes.
-
-- Built an end-to-end agentic procure-to-pay (P2P) cycle, automating
-  vendor selection, purchase order creation, and document
-  reconciliation.
+**Providus Technologies -- Associate Product Engineer** *Jun 2026 --
+Present*
 
 - Built [ReconAI](https://github.com/saadmemon1/ReconAI) end-to-end in
-  Next.js, from document upload and parsing to LLM-powered
-  reconciliation with an evidence viewer and auto-drafted supplier
-  emails.
+  Next.js, piping DocAI-parsed documents into an LLM reconciliation
+  engine with an evidence viewer and auto-drafted supplier emails.
 
-- Conducted competitive analysis of document intelligence layer,
-  identifying feature gaps and product positioning opportunities.
+- Audited 499 fields across 53 procurement documents to measure DocAI's
+  parsing accuracy, identifying failure patterns that fed directly into
+  product fixes.
+
+- Designed the agentic procure-to-pay (P2P) cycle covering vendor
+  selection, purchase order creation, and document reconciliation.
+
+- Conducted competitive analysis of document intelligence market,
+  identifying new workflow ideas that shaped the product roadmap.
 
 **10Pearls -- Data Science Intern (Shine Program)** *Apr 2026 -- Jun
 2026*
@@ -84,12 +81,6 @@ Project*
 - Optimized database query performance by implementing timestamp filters
   on the feature group, reducing data pipeline latency from over 100
   seconds to under a second.
-
-**Teach For Pakistan -- Campus Leader** *Oct 2025 -- Apr 2026*
-
-- Engaged 150+ students at IBA through a 3-phase outreach campaign;
-  organized Carnival Fest with 100+ attendees to connect students with
-  TFP fellows and communities they serve.
 
 **IBA Karachi -- Data Structures Teaching Assistant** *Aug 2025 -- Dec
 2025*
@@ -106,16 +97,11 @@ Project*
   via OpenAI transcription API) -- both live on Vercel within a 2-month
   accelerator.
 
-**AIESEC in IBA** *Oct 2023 -- Aug 2025*
-
-- Recruited new members by conducting panel interviews and group
-  discussions, evaluating candidates on cultural fit and values
-  alignment.
-
-- Sent 34 Global Volunteers across 5+ countries by managing compliance
-  tracking and documentation.
-
 **EXTRACURRICULAR ACTIVITIES**
+
+- **AIESEC in IBA \| Oct 2023 -- Aug 2025:** Recruited new members by
+  conducting panel interviews and group discussions, evaluating
+  candidates on cultural fit and values alignment.
 
 - **26th HEC Men's Shooting Championship -- Air Rifleman \| Nov 2024 --
   Jan 2025:** Competed nationally, qualifying and representing IBA
