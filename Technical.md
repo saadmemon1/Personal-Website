@@ -53,22 +53,21 @@ Project*
 
 **WORK EXPERIENCE**
 
-**Providus Technologies -- Associate Product Engineer** *Jun 2026 --
-Present*
+**Providus Technologies -- Associate Product Engineer** *Jun 2026 -- Oct
+2026*
 
-- Built [ReconAI](https://github.com/saadmemon1/ReconAI) end-to-end in
-  Next.js, piping DocAI-parsed documents into an LLM reconciliation
-  engine with an evidence viewer and auto-drafted supplier emails.
+- Built [ReconAI](https://github.com/saadmemon1/ReconAI) in Next.js,
+  feeding DocAI-parsed POs and invoices to an LLM that flags
+  discrepancies with evidence and drafts supplier emails.
 
-- Audited 499 fields across 53 procurement documents to measure DocAI's
-  parsing accuracy, identifying failure patterns that fed directly into
-  product fixes.
+- Added end-to-end tests for DocAI's MCP plugins and fixed the classify
+  and split tools to match the live API, merged into the core codebase.
+
+- Built an AI plugin that automates tedious script research and
+  outlining for an animation studio.
 
 - Designed the agentic procure-to-pay (P2P) cycle covering vendor
   selection, purchase order creation, and document reconciliation.
-
-- Conducted competitive analysis of document intelligence market,
-  identifying new workflow ideas that shaped the product roadmap.
 
 **10Pearls -- Data Science Intern (Shine Program)** *Apr 2026 -- Jun
 2026*
@@ -117,5 +116,5 @@ Present*
 **Frameworks:** Next.js, React, React Native, Expo, Node.js, Express,
 Prisma
 
-**Tools:** Supabase, PostgreSQL, Git, Power BI, Microsoft Excel, GitHub
+**Tools:** Supabase, PostgreSQL, Git, Power BI, Power Automate, GitHub
 Actions, Claude Code, GitHub Copilot, Hermes Agent

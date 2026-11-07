@@ -56,25 +56,22 @@ Academic Scholarship*
 
 **WORK EXPERIENCE**
 
-**Providus Technologies -- Associate Product Engineer** *Jun 2026 --
-Present*
+**Providus Technologies -- Associate Product Engineer** *Jun 2026 -- Oct
+2026*
 
-- Ran competitive analysis against Kognitos, LandingAI DocuFlow, and
-  Staple AI, identifying new workflow ideas that shaped the product
-  roadmap.
+- Led client discovery for an animation studio and reshaped their AI
+  tool around its bottleneck of script research and outlining.
 
 - Uncovered through expert interviews that manual reconciliation can
   cost businesses \$100-115 per discrepancy per document, reinforcing
   the need to design and build
   [ReconAI](https://github.com/saadmemon1/ReconAI).
 
+- Defined ReconAI's ideal customer profile and reached 260 finance and
+  procurement leaders at US mid-market firms through LinkedIn and email.
+
 - Designed the agentic procure-to-pay (P2P) cycle covering vendor
   selection, purchase order creation, and document reconciliation.
-
-<!-- -->
-
-- Audited 53 procurement documents to measure DocAI\'s parsing accuracy,
-  identifying failure patterns that fed directly into product fixes.
 
 **10Pearls -- Data Science Intern** *Apr 2026 -- Jun 2026*
 
@@ -108,7 +105,7 @@ Present*
 
 **SKILLS**
 
-**Tools:** JIRA, Power BI, Microsoft Excel, Git, GitHub Actions,
+**Tools:** JIRA, Power BI, Power Automate, Git, GitHub Actions,
 Supabase, Claude Code, GitHub Copilot, Hermes Agent
 
 **Technical:** SQL, TypeScript, Python, React Native
